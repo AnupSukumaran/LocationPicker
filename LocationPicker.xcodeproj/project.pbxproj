@@ -3,17 +3,184 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E04EC002341C62400A90A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E962F89233CB91600084B04 /* Assets.xcassets */; };
+		0E04EC042341CB7E00A90A4E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E04EC032341CB7E00A90A4E /* SDWebImage */; };
+		0E04EC062341CB7E00A90A4E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E04EC052341CB7E00A90A4E /* SDWebImageMapKit */; };
+		0E6C3587233CD779001B8678 /* LocationPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962F73233CB88500084B04 /* LocationPicker.framework */; };
+		0E83A18D233E200B00E0A12A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E738194233CDAE9000967CD /* Main.storyboard */; };
+		0E83A18E233E226700E0A12A /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C3583233CD69F001B8678 /* Picker.swift */; };
+		0E83A197233E3F9100E0A12A /* GoogleMapsM4B.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E83A196233E3F9100E0A12A /* GoogleMapsM4B.framework */; };
+		0E83A198233E3F9100E0A12A /* GoogleMapsM4B.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E83A196233E3F9100E0A12A /* GoogleMapsM4B.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0E962F78233CB88500084B04 /* LocationPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E962F76233CB88500084B04 /* LocationPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E962FAD233CB91600084B04 /* MirrorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F80233CB91600084B04 /* MirrorImage.swift */; };
+		0E962FAE233CB91600084B04 /* MirroringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F81233CB91600084B04 /* MirroringViewController.swift */; };
+		0E962FAF233CB91600084B04 /* L012Localizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F82233CB91600084B04 /* L012Localizer.swift */; };
+		0E962FB0233CB91600084B04 /* L102Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F83233CB91600084B04 /* L102Language.swift */; };
+		0E962FB4233CB91600084B04 /* APILibrary+Ext3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F8B233CB91600084B04 /* APILibrary+Ext3.swift */; };
+		0E962FB5233CB91600084B04 /* URLFormater_Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F8C233CB91600084B04 /* URLFormater_Picker.swift */; };
+		0E962FB6233CB91600084B04 /* RequestMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F8D233CB91600084B04 /* RequestMaker.swift */; };
+		0E962FB7233CB91600084B04 /* UIStoryboard+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F8F233CB91600084B04 /* UIStoryboard+Ext.swift */; };
+		0E962FB8233CB91600084B04 /* UIDevice+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F90233CB91600084B04 /* UIDevice+Ext.swift */; };
+		0E962FB9233CB91600084B04 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F91233CB91600084B04 /* UIViewController+Ext.swift */; };
+		0E962FBA233CB91600084B04 /* NearByPlacesListViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F94233CB91600084B04 /* NearByPlacesListViewController+Ext.swift */; };
+		0E962FBB233CB91600084B04 /* NearByPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F95233CB91600084B04 /* NearByPlacesViewModel.swift */; };
+		0E962FBC233CB91600084B04 /* NearByPlacesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F96233CB91600084B04 /* NearByPlacesListViewController.swift */; };
+		0E962FBD233CB91600084B04 /* NearbyPlacesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F98233CB91600084B04 /* NearbyPlacesTableViewCell.swift */; };
+		0E962FBE233CB91600084B04 /* PickerMapViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F9A233CB91600084B04 /* PickerMapViewController+Ext.swift */; };
+		0E962FBF233CB91600084B04 /* PickerMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F9B233CB91600084B04 /* PickerMapViewController.swift */; };
+		0E962FC0233CB91600084B04 /* PickerMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F9C233CB91600084B04 /* PickerMapViewModel.swift */; };
+		0E962FC1233CB91600084B04 /* LocModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F9E233CB91600084B04 /* LocModel.swift */; };
+		0E962FC2233CB91600084B04 /* NearbyPlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962F9F233CB91600084B04 /* NearbyPlacesModel.swift */; };
+		0E962FC3233CB91600084B04 /* ModelClassResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA0233CB91600084B04 /* ModelClassResponse.swift */; };
+		0E962FC4233CB91600084B04 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA2233CB91600084B04 /* Logger.swift */; };
+		0E962FC5233CB91600084B04 /* GVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA3233CB91600084B04 /* GVars.swift */; };
+		0E962FC6233CB91600084B04 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA4233CB91600084B04 /* NoDataView.swift */; };
+		0E962FC7233CB91600084B04 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA5233CB91600084B04 /* Results.swift */; };
+		0E962FC8233CB91600084B04 /* PlacePickerQ_API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA6233CB91600084B04 /* PlacePickerQ_API.swift */; };
+		0E962FC9233CB91600084B04 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA7233CB91600084B04 /* TypeAliases.swift */; };
+		0E962FCA233CB91600084B04 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA8233CB91600084B04 /* Texts.swift */; };
+		0E962FCB233CB91600084B04 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FA9233CB91600084B04 /* Const.swift */; };
+		0E962FCC233CB91600084B04 /* SetImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FAA233CB91600084B04 /* SetImg.swift */; };
+		0E962FCD233CB91600084B04 /* Picker_PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E962FAB233CB91600084B04 /* Picker_PlaceMarker.swift */; };
+		0E962FD1233CB98900084B04 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 0E962FD0233CB98900084B04 /* NVActivityIndicatorView */; };
+		0E962FD4233CBE2E00084B04 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0E962FD3233CBE2E00084B04 /* Alamofire */; };
+		0E962FDC233CBF2C00084B04 /* GoogleMapsBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FDB233CBF2C00084B04 /* GoogleMapsBase.framework */; };
+		0E962FDE233CBF5600084B04 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FDD233CBF5600084B04 /* GoogleMaps.framework */; };
+		0E962FE0233CBF5A00084B04 /* GoogleMapsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FDF233CBF5A00084B04 /* GoogleMapsCore.framework */; };
+		0E962FE4233CBFF500084B04 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E962FE3233CBFF500084B04 /* GoogleMaps.bundle */; };
+		0E962FE7233CC03900084B04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FE6233CC03900084B04 /* UIKit.framework */; };
+		0E962FE9233CC04300084B04 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FE8233CC04300084B04 /* SystemConfiguration.framework */; };
+		0E962FEB233CC04B00084B04 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FEA233CC04B00084B04 /* QuartzCore.framework */; };
+		0E962FED233CC05500084B04 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FEC233CC05500084B04 /* OpenGLES.framework */; };
+		0E962FEF233CC05F00084B04 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FEE233CC05F00084B04 /* libz.tbd */; };
+		0E962FF1233CC06800084B04 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FF0233CC06800084B04 /* libc++.tbd */; };
+		0E962FF3233CC07100084B04 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FF2233CC07100084B04 /* ImageIO.framework */; };
+		0E962FF5233CC07A00084B04 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FF4233CC07A00084B04 /* GLKit.framework */; };
+		0E962FF7233CC08300084B04 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FF6233CC08300084B04 /* CoreText.framework */; };
+		0E962FF9233CC08C00084B04 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FF8233CC08C00084B04 /* CoreTelephony.framework */; };
+		0E962FFB233CC09400084B04 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FFA233CC09400084B04 /* CoreLocation.framework */; };
+		0E962FFD233CC09E00084B04 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FFC233CC09E00084B04 /* CoreImage.framework */; };
+		0E962FFF233CC0A600084B04 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962FFE233CC0A600084B04 /* CoreGraphics.framework */; };
+		0E963001233CC0AF00084B04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E963000233CC0AF00084B04 /* CoreData.framework */; };
+		0E963003233CC0B700084B04 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E963002233CC0B700084B04 /* Accelerate.framework */; };
+		0E963005233CC15800084B04 /* GooglePlaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E963004233CC15800084B04 /* GooglePlaces.framework */; };
+		0E963007233CC18700084B04 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0E963006233CC18700084B04 /* GooglePlaces.bundle */; };
+		0E96300F233CC25B00084B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E96300E233CC25B00084B04 /* AppDelegate.swift */; };
+		0E963011233CC25B00084B04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E963010233CC25B00084B04 /* SceneDelegate.swift */; };
+		0E963013233CC25B00084B04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E963012233CC25B00084B04 /* ViewController.swift */; };
+		0E963016233CC25B00084B04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E963014233CC25B00084B04 /* Main.storyboard */; };
+		0E963018233CC25D00084B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E963017233CC25D00084B04 /* Assets.xcassets */; };
+		0E96301B233CC25D00084B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E963019233CC25D00084B04 /* LaunchScreen.storyboard */; };
+		0E963021233CC3BB00084B04 /* LocationPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962F73233CB88500084B04 /* LocationPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0E963022233CC3BB00084B04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0E962F6A233CB88500084B04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E962F72233CB88500084B04;
+			remoteInfo = LocationPicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E83A199233E3F9100E0A12A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E83A198233E3F9100E0A12A /* GoogleMapsM4B.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E963024233CC3BC00084B04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0E963021233CC3BB00084B04 /* LocationPicker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0E6C3583233CD69F001B8678 /* Picker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picker.swift; sourceTree = "<group>"; };
+		0E738194233CDAE9000967CD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0E83A196233E3F9100E0A12A /* GoogleMapsM4B.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsM4B.framework; path = "../../Downloads/GoogleMaps-3.4.0/M4B/Frameworks/GoogleMapsM4B.framework"; sourceTree = "<group>"; };
 		0E962F73233CB88500084B04 /* LocationPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LocationPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E962F76233CB88500084B04 /* LocationPicker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationPicker.h; sourceTree = "<group>"; };
 		0E962F77233CB88500084B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E962F80233CB91600084B04 /* MirrorImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirrorImage.swift; sourceTree = "<group>"; };
+		0E962F81233CB91600084B04 /* MirroringViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MirroringViewController.swift; sourceTree = "<group>"; };
+		0E962F82233CB91600084B04 /* L012Localizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L012Localizer.swift; sourceTree = "<group>"; };
+		0E962F83233CB91600084B04 /* L102Language.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L102Language.swift; sourceTree = "<group>"; };
+		0E962F89233CB91600084B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E962F8B233CB91600084B04 /* APILibrary+Ext3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APILibrary+Ext3.swift"; sourceTree = "<group>"; };
+		0E962F8C233CB91600084B04 /* URLFormater_Picker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLFormater_Picker.swift; sourceTree = "<group>"; };
+		0E962F8D233CB91600084B04 /* RequestMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestMaker.swift; sourceTree = "<group>"; };
+		0E962F8F233CB91600084B04 /* UIStoryboard+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Ext.swift"; sourceTree = "<group>"; };
+		0E962F90233CB91600084B04 /* UIDevice+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Ext.swift"; sourceTree = "<group>"; };
+		0E962F91233CB91600084B04 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		0E962F94233CB91600084B04 /* NearByPlacesListViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NearByPlacesListViewController+Ext.swift"; sourceTree = "<group>"; };
+		0E962F95233CB91600084B04 /* NearByPlacesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByPlacesViewModel.swift; sourceTree = "<group>"; };
+		0E962F96233CB91600084B04 /* NearByPlacesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearByPlacesListViewController.swift; sourceTree = "<group>"; };
+		0E962F98233CB91600084B04 /* NearbyPlacesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesTableViewCell.swift; sourceTree = "<group>"; };
+		0E962F9A233CB91600084B04 /* PickerMapViewController+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PickerMapViewController+Ext.swift"; sourceTree = "<group>"; };
+		0E962F9B233CB91600084B04 /* PickerMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerMapViewController.swift; sourceTree = "<group>"; };
+		0E962F9C233CB91600084B04 /* PickerMapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerMapViewModel.swift; sourceTree = "<group>"; };
+		0E962F9E233CB91600084B04 /* LocModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocModel.swift; sourceTree = "<group>"; };
+		0E962F9F233CB91600084B04 /* NearbyPlacesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyPlacesModel.swift; sourceTree = "<group>"; };
+		0E962FA0233CB91600084B04 /* ModelClassResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelClassResponse.swift; sourceTree = "<group>"; };
+		0E962FA2233CB91600084B04 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		0E962FA3233CB91600084B04 /* GVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GVars.swift; sourceTree = "<group>"; };
+		0E962FA4233CB91600084B04 /* NoDataView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		0E962FA5233CB91600084B04 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		0E962FA6233CB91600084B04 /* PlacePickerQ_API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacePickerQ_API.swift; sourceTree = "<group>"; };
+		0E962FA7233CB91600084B04 /* TypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		0E962FA8233CB91600084B04 /* Texts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		0E962FA9233CB91600084B04 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		0E962FAA233CB91600084B04 /* SetImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetImg.swift; sourceTree = "<group>"; };
+		0E962FAB233CB91600084B04 /* Picker_PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Picker_PlaceMarker.swift; sourceTree = "<group>"; };
+		0E962FDB233CBF2C00084B04 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsBase.framework; sourceTree = "<group>"; };
+		0E962FDD233CBF5600084B04 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		0E962FDF233CBF5A00084B04 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsCore.framework; sourceTree = "<group>"; };
+		0E962FE1233CBF7B00084B04 /* GoogleMapsM4B.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMapsM4B.framework; sourceTree = "<group>"; };
+		0E962FE3233CBFF500084B04 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		0E962FE6233CC03900084B04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0E962FE8233CC04300084B04 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FEA233CC04B00084B04 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FEC233CC05500084B04 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		0E962FEE233CC05F00084B04 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		0E962FF0233CC06800084B04 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		0E962FF2233CC07100084B04 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FF4233CC07A00084B04 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		0E962FF6233CC08300084B04 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FF8233CC08C00084B04 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FFA233CC09400084B04 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FFC233CC09E00084B04 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		0E962FFE233CC0A600084B04 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		0E963000233CC0AF00084B04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		0E963002233CC0B700084B04 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		0E963004233CC15800084B04 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlaces.framework; sourceTree = "<group>"; };
+		0E963006233CC18700084B04 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		0E96300C233CC25B00084B04 /* Sample_PlacePickerQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample_PlacePickerQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E96300E233CC25B00084B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0E963010233CC25B00084B04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		0E963012233CC25B00084B04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0E963015233CC25B00084B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0E963017233CC25D00084B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E96301A233CC25D00084B04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0E96301C233CC25D00084B04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +188,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E963003233CC0B700084B04 /* Accelerate.framework in Frameworks */,
+				0E963001233CC0AF00084B04 /* CoreData.framework in Frameworks */,
+				0E962FFF233CC0A600084B04 /* CoreGraphics.framework in Frameworks */,
+				0E962FFD233CC09E00084B04 /* CoreImage.framework in Frameworks */,
+				0E962FFB233CC09400084B04 /* CoreLocation.framework in Frameworks */,
+				0E962FF9233CC08C00084B04 /* CoreTelephony.framework in Frameworks */,
+				0E962FF7233CC08300084B04 /* CoreText.framework in Frameworks */,
+				0E962FF5233CC07A00084B04 /* GLKit.framework in Frameworks */,
+				0E962FF3233CC07100084B04 /* ImageIO.framework in Frameworks */,
+				0E962FF1233CC06800084B04 /* libc++.tbd in Frameworks */,
+				0E962FEF233CC05F00084B04 /* libz.tbd in Frameworks */,
+				0E962FED233CC05500084B04 /* OpenGLES.framework in Frameworks */,
+				0E04EC042341CB7E00A90A4E /* SDWebImage in Frameworks */,
+				0E83A197233E3F9100E0A12A /* GoogleMapsM4B.framework in Frameworks */,
+				0E962FEB233CC04B00084B04 /* QuartzCore.framework in Frameworks */,
+				0E962FE9233CC04300084B04 /* SystemConfiguration.framework in Frameworks */,
+				0E962FE7233CC03900084B04 /* UIKit.framework in Frameworks */,
+				0E963005233CC15800084B04 /* GooglePlaces.framework in Frameworks */,
+				0E962FDE233CBF5600084B04 /* GoogleMaps.framework in Frameworks */,
+				0E962FDC233CBF2C00084B04 /* GoogleMapsBase.framework in Frameworks */,
+				0E962FE0233CBF5A00084B04 /* GoogleMapsCore.framework in Frameworks */,
+				0E962FD1233CB98900084B04 /* NVActivityIndicatorView in Frameworks */,
+				0E04EC062341CB7E00A90A4E /* SDWebImageMapKit in Frameworks */,
+				0E962FD4233CBE2E00084B04 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E963009233CC25B00084B04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E6C3587233CD779001B8678 /* LocationPicker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,7 +230,9 @@
 			isa = PBXGroup;
 			children = (
 				0E962F75233CB88500084B04 /* LocationPicker */,
+				0E96300D233CC25B00084B04 /* Sample_PlacePickerQ */,
 				0E962F74233CB88500084B04 /* Products */,
+				0E962FE5233CC03900084B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -39,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				0E962F73233CB88500084B04 /* LocationPicker.framework */,
+				0E96300C233CC25B00084B04 /* Sample_PlacePickerQ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +248,191 @@
 		0E962F75233CB88500084B04 /* LocationPicker */ = {
 			isa = PBXGroup;
 			children = (
-				0E962F76233CB88500084B04 /* LocationPicker.h */,
+				0E962F7E233CB91600084B04 /* PlacePickerQ */,
+				0E962FDA233CBF0C00084B04 /* Frameworks */,
 				0E962F77233CB88500084B04 /* Info.plist */,
 			);
 			path = LocationPicker;
+			sourceTree = "<group>";
+		};
+		0E962F7E233CB91600084B04 /* PlacePickerQ */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F76233CB88500084B04 /* LocationPicker.h */,
+				0E962F7F233CB91600084B04 /* LangHelper */,
+				0E962F85233CB91600084B04 /* Storyboard */,
+				0E962F88233CB91600084B04 /* Resources */,
+				0E962F8A233CB91600084B04 /* APILibrary */,
+				0E962F8E233CB91600084B04 /* Extensions */,
+				0E962F92233CB91600084B04 /* ViewControllers */,
+				0E962F9D233CB91600084B04 /* Model */,
+				0E962FA1233CB91600084B04 /* Controllers */,
+			);
+			path = PlacePickerQ;
+			sourceTree = "<group>";
+		};
+		0E962F7F233CB91600084B04 /* LangHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F80233CB91600084B04 /* MirrorImage.swift */,
+				0E962F81233CB91600084B04 /* MirroringViewController.swift */,
+				0E962F82233CB91600084B04 /* L012Localizer.swift */,
+				0E962F83233CB91600084B04 /* L102Language.swift */,
+			);
+			path = LangHelper;
+			sourceTree = "<group>";
+		};
+		0E962F85233CB91600084B04 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0E738194233CDAE9000967CD /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		0E962F88233CB91600084B04 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F89233CB91600084B04 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0E962F8A233CB91600084B04 /* APILibrary */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F8B233CB91600084B04 /* APILibrary+Ext3.swift */,
+				0E962F8C233CB91600084B04 /* URLFormater_Picker.swift */,
+				0E962F8D233CB91600084B04 /* RequestMaker.swift */,
+			);
+			path = APILibrary;
+			sourceTree = "<group>";
+		};
+		0E962F8E233CB91600084B04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F8F233CB91600084B04 /* UIStoryboard+Ext.swift */,
+				0E962F90233CB91600084B04 /* UIDevice+Ext.swift */,
+				0E962F91233CB91600084B04 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0E962F92233CB91600084B04 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F93233CB91600084B04 /* NearByPlacesListViewController */,
+				0E962F99233CB91600084B04 /* MapViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0E962F93233CB91600084B04 /* NearByPlacesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F94233CB91600084B04 /* NearByPlacesListViewController+Ext.swift */,
+				0E962F95233CB91600084B04 /* NearByPlacesViewModel.swift */,
+				0E962F96233CB91600084B04 /* NearByPlacesListViewController.swift */,
+				0E962F97233CB91600084B04 /* NearbyPlacesTableViewCell */,
+			);
+			path = NearByPlacesListViewController;
+			sourceTree = "<group>";
+		};
+		0E962F97233CB91600084B04 /* NearbyPlacesTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F98233CB91600084B04 /* NearbyPlacesTableViewCell.swift */,
+			);
+			path = NearbyPlacesTableViewCell;
+			sourceTree = "<group>";
+		};
+		0E962F99233CB91600084B04 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F9B233CB91600084B04 /* PickerMapViewController.swift */,
+				0E962F9A233CB91600084B04 /* PickerMapViewController+Ext.swift */,
+				0E962F9C233CB91600084B04 /* PickerMapViewModel.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		0E962F9D233CB91600084B04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E962F9E233CB91600084B04 /* LocModel.swift */,
+				0E962F9F233CB91600084B04 /* NearbyPlacesModel.swift */,
+				0E962FA0233CB91600084B04 /* ModelClassResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E962FA1233CB91600084B04 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E6C3583233CD69F001B8678 /* Picker.swift */,
+				0E962FA2233CB91600084B04 /* Logger.swift */,
+				0E962FA3233CB91600084B04 /* GVars.swift */,
+				0E962FA4233CB91600084B04 /* NoDataView.swift */,
+				0E962FA5233CB91600084B04 /* Results.swift */,
+				0E962FA6233CB91600084B04 /* PlacePickerQ_API.swift */,
+				0E962FA7233CB91600084B04 /* TypeAliases.swift */,
+				0E962FA8233CB91600084B04 /* Texts.swift */,
+				0E962FA9233CB91600084B04 /* Const.swift */,
+				0E962FAA233CB91600084B04 /* SetImg.swift */,
+				0E962FAB233CB91600084B04 /* Picker_PlaceMarker.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E962FDA233CBF0C00084B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E963006233CC18700084B04 /* GooglePlaces.bundle */,
+				0E963004233CC15800084B04 /* GooglePlaces.framework */,
+				0E962FE3233CBFF500084B04 /* GoogleMaps.bundle */,
+				0E962FE1233CBF7B00084B04 /* GoogleMapsM4B.framework */,
+				0E962FDF233CBF5A00084B04 /* GoogleMapsCore.framework */,
+				0E962FDD233CBF5600084B04 /* GoogleMaps.framework */,
+				0E962FDB233CBF2C00084B04 /* GoogleMapsBase.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E962FE5233CC03900084B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E83A196233E3F9100E0A12A /* GoogleMapsM4B.framework */,
+				0E963002233CC0B700084B04 /* Accelerate.framework */,
+				0E963000233CC0AF00084B04 /* CoreData.framework */,
+				0E962FFE233CC0A600084B04 /* CoreGraphics.framework */,
+				0E962FFC233CC09E00084B04 /* CoreImage.framework */,
+				0E962FFA233CC09400084B04 /* CoreLocation.framework */,
+				0E962FF8233CC08C00084B04 /* CoreTelephony.framework */,
+				0E962FF6233CC08300084B04 /* CoreText.framework */,
+				0E962FF4233CC07A00084B04 /* GLKit.framework */,
+				0E962FF2233CC07100084B04 /* ImageIO.framework */,
+				0E962FF0233CC06800084B04 /* libc++.tbd */,
+				0E962FEE233CC05F00084B04 /* libz.tbd */,
+				0E962FEC233CC05500084B04 /* OpenGLES.framework */,
+				0E962FEA233CC04B00084B04 /* QuartzCore.framework */,
+				0E962FE8233CC04300084B04 /* SystemConfiguration.framework */,
+				0E962FE6233CC03900084B04 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0E96300D233CC25B00084B04 /* Sample_PlacePickerQ */ = {
+			isa = PBXGroup;
+			children = (
+				0E96300E233CC25B00084B04 /* AppDelegate.swift */,
+				0E963010233CC25B00084B04 /* SceneDelegate.swift */,
+				0E963012233CC25B00084B04 /* ViewController.swift */,
+				0E963014233CC25B00084B04 /* Main.storyboard */,
+				0E963017233CC25D00084B04 /* Assets.xcassets */,
+				0E963019233CC25D00084B04 /* LaunchScreen.storyboard */,
+				0E96301C233CC25D00084B04 /* Info.plist */,
+			);
+			path = Sample_PlacePickerQ;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +457,41 @@
 				0E962F6F233CB88500084B04 /* Sources */,
 				0E962F70233CB88500084B04 /* Frameworks */,
 				0E962F71233CB88500084B04 /* Resources */,
+				0E83A199233E3F9100E0A12A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = LocationPicker;
+			packageProductDependencies = (
+				0E962FD0233CB98900084B04 /* NVActivityIndicatorView */,
+				0E962FD3233CBE2E00084B04 /* Alamofire */,
+				0E04EC032341CB7E00A90A4E /* SDWebImage */,
+				0E04EC052341CB7E00A90A4E /* SDWebImageMapKit */,
+			);
 			productName = LocationPicker;
 			productReference = 0E962F73233CB88500084B04 /* LocationPicker.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		0E96300B233CC25B00084B04 /* Sample_PlacePickerQ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E96301F233CC25D00084B04 /* Build configuration list for PBXNativeTarget "Sample_PlacePickerQ" */;
+			buildPhases = (
+				0E963008233CC25B00084B04 /* Sources */,
+				0E963009233CC25B00084B04 /* Frameworks */,
+				0E96300A233CC25B00084B04 /* Resources */,
+				0E963024233CC3BC00084B04 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0E963023233CC3BB00084B04 /* PBXTargetDependency */,
+			);
+			name = Sample_PlacePickerQ;
+			productName = Sample_PlacePickerQ;
+			productReference = 0E96300C233CC25B00084B04 /* Sample_PlacePickerQ.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,10 +499,14 @@
 		0E962F6A233CB88500084B04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Qaptive Technologies";
 				TargetAttributes = {
 					0E962F72233CB88500084B04 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					0E96300B233CC25B00084B04 = {
 						CreatedOnToolsVersion = 11.0;
 					};
 				};
@@ -107,11 +520,17 @@
 				Base,
 			);
 			mainGroup = 0E962F69233CB88500084B04;
+			packageReferences = (
+				0E962FCF233CB98900084B04 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				0E962FD2233CBE2E00084B04 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 0E962F74233CB88500084B04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0E962F72233CB88500084B04 /* LocationPicker */,
+				0E96300B233CC25B00084B04 /* Sample_PlacePickerQ */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +540,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E963007233CC18700084B04 /* GooglePlaces.bundle in Resources */,
+				0E962FE4233CBFF500084B04 /* GoogleMaps.bundle in Resources */,
+				0E04EC002341C62400A90A4E /* Assets.xcassets in Resources */,
+				0E83A18D233E200B00E0A12A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E96300A233CC25B00084B04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E96301B233CC25D00084B04 /* LaunchScreen.storyboard in Resources */,
+				0E963018233CC25D00084B04 /* Assets.xcassets in Resources */,
+				0E963016233CC25B00084B04 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +564,78 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E962FB0233CB91600084B04 /* L102Language.swift in Sources */,
+				0E962FB6233CB91600084B04 /* RequestMaker.swift in Sources */,
+				0E962FC8233CB91600084B04 /* PlacePickerQ_API.swift in Sources */,
+				0E962FC1233CB91600084B04 /* LocModel.swift in Sources */,
+				0E962FC5233CB91600084B04 /* GVars.swift in Sources */,
+				0E962FB9233CB91600084B04 /* UIViewController+Ext.swift in Sources */,
+				0E962FC4233CB91600084B04 /* Logger.swift in Sources */,
+				0E962FBB233CB91600084B04 /* NearByPlacesViewModel.swift in Sources */,
+				0E962FAE233CB91600084B04 /* MirroringViewController.swift in Sources */,
+				0E962FC2233CB91600084B04 /* NearbyPlacesModel.swift in Sources */,
+				0E962FAF233CB91600084B04 /* L012Localizer.swift in Sources */,
+				0E962FCD233CB91600084B04 /* Picker_PlaceMarker.swift in Sources */,
+				0E962FCC233CB91600084B04 /* SetImg.swift in Sources */,
+				0E962FBE233CB91600084B04 /* PickerMapViewController+Ext.swift in Sources */,
+				0E962FCA233CB91600084B04 /* Texts.swift in Sources */,
+				0E962FCB233CB91600084B04 /* Const.swift in Sources */,
+				0E962FC0233CB91600084B04 /* PickerMapViewModel.swift in Sources */,
+				0E962FB7233CB91600084B04 /* UIStoryboard+Ext.swift in Sources */,
+				0E962FC6233CB91600084B04 /* NoDataView.swift in Sources */,
+				0E962FB8233CB91600084B04 /* UIDevice+Ext.swift in Sources */,
+				0E962FC9233CB91600084B04 /* TypeAliases.swift in Sources */,
+				0E962FBD233CB91600084B04 /* NearbyPlacesTableViewCell.swift in Sources */,
+				0E962FBA233CB91600084B04 /* NearByPlacesListViewController+Ext.swift in Sources */,
+				0E83A18E233E226700E0A12A /* Picker.swift in Sources */,
+				0E962FB4233CB91600084B04 /* APILibrary+Ext3.swift in Sources */,
+				0E962FC7233CB91600084B04 /* Results.swift in Sources */,
+				0E962FBC233CB91600084B04 /* NearByPlacesListViewController.swift in Sources */,
+				0E962FAD233CB91600084B04 /* MirrorImage.swift in Sources */,
+				0E962FC3233CB91600084B04 /* ModelClassResponse.swift in Sources */,
+				0E962FB5233CB91600084B04 /* URLFormater_Picker.swift in Sources */,
+				0E962FBF233CB91600084B04 /* PickerMapViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E963008233CC25B00084B04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E963013233CC25B00084B04 /* ViewController.swift in Sources */,
+				0E96300F233CC25B00084B04 /* AppDelegate.swift in Sources */,
+				0E963011233CC25B00084B04 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E963023233CC3BB00084B04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E962F72233CB88500084B04 /* LocationPicker */;
+			targetProxy = 0E963022233CC3BB00084B04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0E963014233CC25B00084B04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E963015233CC25B00084B04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0E963019233CC25D00084B04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0E96301A233CC25D00084B04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0E962F79233CB88500084B04 /* Debug */ = {
@@ -192,6 +693,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -248,6 +750,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -266,6 +769,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocationPicker/Frameworks",
+				);
 				INFOPLIST_FILE = LocationPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -276,8 +783,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = QaptiveTech.LocationPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -290,6 +798,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LocationPicker/Frameworks",
+				);
 				INFOPLIST_FILE = LocationPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,6 +812,43 @@
 				PRODUCT_BUNDLE_IDENTIFIER = QaptiveTech.LocationPicker;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		0E96301D233CC25D00084B04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P3J8AFD59;
+				INFOPLIST_FILE = Sample_PlacePickerQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QaptiveTech.Sample-PlacePickerQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E96301E233CC25D00084B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3P3J8AFD59;
+				INFOPLIST_FILE = Sample_PlacePickerQ/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "QaptiveTech.Sample-PlacePickerQ";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,7 +875,66 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0E96301F233CC25D00084B04 /* Build configuration list for PBXNativeTarget "Sample_PlacePickerQ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E96301D233CC25D00084B04 /* Debug */,
+				0E96301E233CC25D00084B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		0E962FCF233CB98900084B04 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.8.0;
+			};
+		};
+		0E962FD2233CBE2E00084B04 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0E04EC032341CB7E00A90A4E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0E04EC052341CB7E00A90A4E /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		0E962FD0233CB98900084B04 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E962FCF233CB98900084B04 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		0E962FD3233CBE2E00084B04 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0E962FD2233CBE2E00084B04 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E962F6A233CB88500084B04 /* Project object */;
 }

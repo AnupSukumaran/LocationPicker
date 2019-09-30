@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zFi-1O-LuZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="N2J-cM-dcr">
+            <objects>
+                <viewController id="zFi-1O-LuZ" customClass="ViewController" customModule="Sample_PlacePickerQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="siG-H4-CUf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDJ-v1-hAF">
+                                <rect key="frame" x="132" y="347" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.8980392157" green="0.58823529409999997" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="V4V-Jo-K9g"/>
+                                    <constraint firstAttribute="width" constant="150" id="uoF-gB-OQO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <state key="normal" title="PlacePicker">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickerAction:" destination="zFi-1O-LuZ" eventType="touchUpInside" id="RmM-3o-5OC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8i-ar-1Ob">
+                                <rect key="frame" x="20" y="300.5" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.8980392157" green="0.0" blue="0.14300211339999999" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wfo-Dc-wfx" firstAttribute="trailing" secondItem="O8i-ar-1Ob" secondAttribute="trailing" constant="20" id="1pR-rX-7H7"/>
+                            <constraint firstItem="O8i-ar-1Ob" firstAttribute="centerY" secondItem="siG-H4-CUf" secondAttribute="centerY" multiplier="0.7" id="DmT-tk-XQ5"/>
+                            <constraint firstItem="O8i-ar-1Ob" firstAttribute="leading" secondItem="Wfo-Dc-wfx" secondAttribute="leading" constant="20" id="HnA-vH-pj9"/>
+                            <constraint firstItem="QDJ-v1-hAF" firstAttribute="top" secondItem="O8i-ar-1Ob" secondAttribute="bottom" constant="20" id="QgE-65-pUP"/>
+                            <constraint firstItem="O8i-ar-1Ob" firstAttribute="centerX" secondItem="siG-H4-CUf" secondAttribute="centerX" id="pWQ-L3-HF8"/>
+                            <constraint firstItem="QDJ-v1-hAF" firstAttribute="centerX" secondItem="siG-H4-CUf" secondAttribute="centerX" id="wpz-Pe-H6b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wfo-Dc-wfx"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressLable" destination="O8i-ar-1Ob" id="Gr9-0p-R5E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oP4-tu-15w" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="41"/>
+        </scene>
+    </scenes>
+</document>
