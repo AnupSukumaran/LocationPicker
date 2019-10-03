@@ -47,7 +47,6 @@ public class PickerMapViewController: UIViewController {
         do {
            // Set the map style by passing a valid JSON string.
            let kMapStyle = dictToJson_Convertor(styleForm)
-           print("kMapStyle = \(kMapStyle!)")
            mapView.mapStyle = try GMSMapStyle(jsonString: kMapStyle! as String)
         } catch {
            NSLog("One or more of the map styles failed to load. \(error)")

@@ -112,21 +112,20 @@ public class PickerMapViewModel: NSObject {
         
             
         _ = coordsArray.enumerated().map { (index, val) in
-            print("lat = \(val.latitude), long = \(val.longitude)")
+           
             
             if let i = GVars.selectedMarkerIndex {
                 
                 let marker = Picker_PlaceMarker(location: val, mapView: mapView)
                 markers.append(marker)
                
-                print("IndexVal = \(index), I = \(i)")
                 
                 if index != i {
                     marker.map = mapView
                 } else {
-                    //marker.icon = nil
+
                     marker.map = nil
-                    print("Selected_index = \(index)")
+                    
                 }
                 
             } else {

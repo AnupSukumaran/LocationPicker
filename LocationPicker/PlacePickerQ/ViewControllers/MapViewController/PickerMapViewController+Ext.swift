@@ -118,7 +118,6 @@ extension PickerMapViewController: GMSAutocompleteViewControllerDelegate {
         DispatchQueue.main.async {
             if let index = self.funcs.markers.firstIndex(of: marker as! Picker_PlaceMarker) {
                 GVars.selectedMarkerIndex = index
-                print("MapIndex = \(index)")
             }
         }
         
