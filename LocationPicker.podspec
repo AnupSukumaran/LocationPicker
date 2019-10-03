@@ -17,7 +17,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "13.0"
 
 
-  spec.source       = { :git => "https://github.com/AnupSukumaran/LocationPicker.git", :tag => "0.0.3" }
+  spec.source       = { :git => "https://github.com/AnupSukumaran/LocationPicker.git", :tag => "0.0.6" }
 
 
   spec.source_files  = "LocationPicker", "LocationPicker/**/*.{swift}"
