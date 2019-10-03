@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "LocationPicker"
-  spec.version      = "0.0.4"
+  spec.version      = "0.0.5"
   spec.summary      = "LocationPicker is used to pick address from Google maps directly."
 
   #spec.description  = <<-DESC
@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   
   spec.dependency "Alamofire", "~> 4.9.0"
-  spec.dependency "SDWebImage", "~> 5.2.0"
+  spec.dependency "SDWebImage", "~> 5.2.2"
   spec.dependency "NVActivityIndicatorView/AppExtension", "~> 4.8.0"
   spec.dependency "GooglePlaces", "~> 3.4.0"
   spec.dependency "GoogleMaps", "~> 3.4.0"

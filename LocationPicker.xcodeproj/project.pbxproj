@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0E04EC002341C62400A90A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E962F89233CB91600084B04 /* Assets.xcassets */; };
-		0E04EC042341CB7E00A90A4E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0E04EC032341CB7E00A90A4E /* SDWebImage */; };
-		0E04EC062341CB7E00A90A4E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0E04EC052341CB7E00A90A4E /* SDWebImageMapKit */; };
 		0E6C3587233CD779001B8678 /* LocationPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962F73233CB88500084B04 /* LocationPicker.framework */; };
 		0E83A18D233E200B00E0A12A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E738194233CDAE9000967CD /* Main.storyboard */; };
 		0E83A18E233E226700E0A12A /* Picker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E6C3583233CD69F001B8678 /* Picker.swift */; };
@@ -76,6 +74,8 @@
 		0E963018233CC25D00084B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E963017233CC25D00084B04 /* Assets.xcassets */; };
 		0E96301B233CC25D00084B04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E963019233CC25D00084B04 /* LaunchScreen.storyboard */; };
 		0E963021233CC3BB00084B04 /* LocationPicker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E962F73233CB88500084B04 /* LocationPicker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0ECE664C2345DACC001EA107 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0ECE664B2345DACC001EA107 /* SDWebImage */; };
+		0ECE664E2345DACC001EA107 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0ECE664D2345DACC001EA107 /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,7 +200,7 @@
 				0E962FF1233CC06800084B04 /* libc++.tbd in Frameworks */,
 				0E962FEF233CC05F00084B04 /* libz.tbd in Frameworks */,
 				0E962FED233CC05500084B04 /* OpenGLES.framework in Frameworks */,
-				0E04EC042341CB7E00A90A4E /* SDWebImage in Frameworks */,
+				0ECE664C2345DACC001EA107 /* SDWebImage in Frameworks */,
 				0E83A197233E3F9100E0A12A /* GoogleMapsM4B.framework in Frameworks */,
 				0E962FEB233CC04B00084B04 /* QuartzCore.framework in Frameworks */,
 				0E962FE9233CC04300084B04 /* SystemConfiguration.framework in Frameworks */,
@@ -210,7 +210,7 @@
 				0E962FDC233CBF2C00084B04 /* GoogleMapsBase.framework in Frameworks */,
 				0E962FE0233CBF5A00084B04 /* GoogleMapsCore.framework in Frameworks */,
 				0E962FD1233CB98900084B04 /* NVActivityIndicatorView in Frameworks */,
-				0E04EC062341CB7E00A90A4E /* SDWebImageMapKit in Frameworks */,
+				0ECE664E2345DACC001EA107 /* SDWebImageMapKit in Frameworks */,
 				0E962FD4233CBE2E00084B04 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -467,8 +467,8 @@
 			packageProductDependencies = (
 				0E962FD0233CB98900084B04 /* NVActivityIndicatorView */,
 				0E962FD3233CBE2E00084B04 /* Alamofire */,
-				0E04EC032341CB7E00A90A4E /* SDWebImage */,
-				0E04EC052341CB7E00A90A4E /* SDWebImageMapKit */,
+				0ECE664B2345DACC001EA107 /* SDWebImage */,
+				0ECE664D2345DACC001EA107 /* SDWebImageMapKit */,
 			);
 			productName = LocationPicker;
 			productReference = 0E962F73233CB88500084B04 /* LocationPicker.framework */;
@@ -523,7 +523,7 @@
 			packageReferences = (
 				0E962FCF233CB98900084B04 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
 				0E962FD2233CBE2E00084B04 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				0ECE664A2345DACC001EA107 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 0E962F74233CB88500084B04 /* Products */;
 			projectDirPath = "";
@@ -891,14 +891,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.2.0;
-			};
-		};
 		0E962FCF233CB98900084B04 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
@@ -915,19 +907,17 @@
 				minimumVersion = 4.9.0;
 			};
 		};
+		0ECE664A2345DACC001EA107 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0E04EC032341CB7E00A90A4E /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
-		};
-		0E04EC052341CB7E00A90A4E /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0E04EC022341CB7E00A90A4E /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
-		};
 		0E962FD0233CB98900084B04 /* NVActivityIndicatorView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0E962FCF233CB98900084B04 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
@@ -937,6 +927,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0E962FD2233CBE2E00084B04 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		0ECE664B2345DACC001EA107 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ECE664A2345DACC001EA107 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0ECE664D2345DACC001EA107 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ECE664A2345DACC001EA107 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
