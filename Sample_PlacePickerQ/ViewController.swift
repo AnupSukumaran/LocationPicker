@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: PickerMapViewModelDelegate {
+extension ViewController: MapViewControllerDelegate {
     
     func didCancelSelection() {
 

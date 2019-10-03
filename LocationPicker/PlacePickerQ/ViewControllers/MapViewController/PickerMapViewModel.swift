@@ -69,13 +69,13 @@ public class PickerMapViewModel: NSObject {
     
     
     //MARK:
-    func callNearby_places_list_View(_ main: UIViewController) {
-        guard let vc = UIStoryboard.nearByPlacesListViewController() else {fatalError("Missing nearByPlacesListViewController In POD FILE ")}
-        vc.funcs.nearbyPlacesModels = nearbyPlacesModels
-        let nav = UINavigationController.init(rootViewController: vc)
-        nav.modalPresentationStyle = .fullScreen
-        main.present(nav, animated: true, completion: nil)
-    }
+//    func callNearby_places_list_View(_ main: UIViewController) {
+//        guard let vc = UIStoryboard.nearByPlacesListViewController() else {fatalError("Missing nearByPlacesListViewController In POD FILE ")}
+//        vc.funcs.nearbyPlacesModels = nearbyPlacesModels
+//        let nav = UINavigationController.init(rootViewController: vc)
+//        nav.modalPresentationStyle = .fullScreen
+//        main.present(nav, animated: true, completion: nil)
+//    }
     
     //MARK: API
     func callingAPI(_ current_Lat: String, _ current_Long: String, _ mapView: GMSMapView, _ main: UIViewController, _ pinVerticalCenter_Constrain: NSLayoutConstraint, _ coord: CLLocationCoordinate2D ) {

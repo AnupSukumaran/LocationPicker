@@ -15,7 +15,7 @@ public class Picker: NSObject {
    public func pickerVC(_ main: UIViewController) {
     
     guard let vc = storyboard.instantiateViewController(withIdentifier: "PickerMapViewController") as? PickerMapViewController else {fatalError("PickerMapViewController IS MISSING LocationPicker pod file")}
-        vc.funcs.delegate = main as? PickerMapViewModelDelegate
+        vc.delegate = main as? MapViewControllerDelegate
         let nav = UINavigationController.init(rootViewController: vc)
         nav.modalPresentationStyle  = .fullScreen
         main.present(nav, animated: true, completion: nil)
