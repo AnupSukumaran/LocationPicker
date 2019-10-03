@@ -110,7 +110,6 @@ public class PickerMapViewModel: NSObject {
                 
             }
         
-        print("selectedMarkerIndex = \(GVars.selectedMarkerIndex)")
             
         _ = coordsArray.enumerated().map { (index, val) in
             print("lat = \(val.latitude), long = \(val.longitude)")

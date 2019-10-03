@@ -22,7 +22,6 @@ class NearByPlacesViewModel: NSObject {
     
     //MARK:
     func dismissAnd_SendAddress(_ main: UIViewController, _ address: String, _ coord: CLLocationCoordinate2D) {
-        main.dismiss(animated: true, completion: nil)
         delegate?.send_Selected_Text(address, coord)
     }
 }

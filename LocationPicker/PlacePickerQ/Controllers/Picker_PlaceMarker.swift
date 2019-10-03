@@ -35,57 +35,15 @@ class Picker_PlaceMarker: GMSMarker {
         
         super.init()
         let bundle = Bundle(identifier: "QaptiveTech.LocationPicker")
-        icon = UIImage(named: "jin", in: bundle, with: .none)
+        if #available(iOS 13.0, *) {
+            icon = UIImage(named: "jin", in: bundle, with: .none)
+        } else {
+            icon = UIImage(named: "jin", in: bundle, compatibleWith: nil)
+        }
         position = location
         groundAnchor = CGPoint(x: 0.5, y: 1)
         appearAnimation = .pop
         
     }
-    
-//    //MARK:
-//    func animateMarker(bearing: Double) {
-//        CATransaction.begin()
-//        CATransaction.setValue(Int(10.0), forKey: kCATransactionAnimationDuration)
-//        CATransaction.setCompletionBlock({() -> Void in
-//            self.groundAnchor = CGPoint(x: 0.5, y: 0.5)
-//            self.rotation = bearing
-//        })
-//    }
-//    
-//    func commitMarkerAnimation() {
-//        CATransaction.commit()
-//    }
-//    
-//    fileprivate func notForBus(_ location: CLLocationCoordinate2D, _ mapView: GMSMapView) {
-//        position = location
-//        groundAnchor = CGPoint(x: 0.5, y: 1)
-//        map = mapView
-//    }
-//    
-//    //-----------------***FUNCS TO GET BEARING VALUE***-----------------//
-//    func degreesToRadians(degrees: Double) -> Double {
-//        return degrees * .pi / 180.0
-//    }
-//    
-//    func radiansToDegrees(radians: Double) -> Double {
-//        return radians * 180.0 / .pi
-//    }
-//    
-//    func getBearingBetweenTwoPoints1(point1 : CLLocation, point2 : CLLocation) -> Double {
-//        
-//        let lat1 = degreesToRadians(degrees: point1.coordinate.latitude)
-//        let lon1 = degreesToRadians(degrees: point1.coordinate.longitude)
-//        
-//        let lat2 = degreesToRadians(degrees: point2.coordinate.latitude)
-//        let lon2 = degreesToRadians(degrees: point2.coordinate.longitude)
-//        
-//        let dLon = lon2 - lon1
-//        
-//        let y = sin(dLon) * cos(lat2)
-//        let x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dLon)
-//        let radiansBearing = atan2(y, x)
-//        
-//        return radiansToDegrees(radians: radiansBearing)
-//    }
     
 }

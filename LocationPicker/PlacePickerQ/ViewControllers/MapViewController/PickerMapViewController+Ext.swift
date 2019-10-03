@@ -84,7 +84,9 @@ extension PickerMapViewController: PickerMapViewModelDelegate {
 extension PickerMapViewController: NearByPlacesViewModelDelegate {
 
     func send_Selected_Text(_ address: String, _ coord: CLLocationCoordinate2D) {
-        delegate?.send_Selected_Text_MapView(address, coord)
+        self.delegate?.send_Selected_Text_MapView(address, coord)
+        dismiss(animated: true, completion: nil)
+       
     }
     
 }

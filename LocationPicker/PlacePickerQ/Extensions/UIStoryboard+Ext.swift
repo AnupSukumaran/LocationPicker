@@ -21,11 +21,20 @@ extension UIStoryboard {
     }
 
    static func nearByPlacesListViewController() -> NearByPlacesListViewController? {
-        return pickerStoryboard().instantiateViewController(withIdentifier: "NearByPlacesListViewController") as? NearByPlacesListViewController
+        if #available(iOS 13.0, *) {
+            return pickerStoryboard().instantiateViewController(identifier: "NearByPlacesListViewController") as? NearByPlacesListViewController
+        } else {
+            return pickerStoryboard().instantiateViewController(withIdentifier: "NearByPlacesListViewController") as? NearByPlacesListViewController
+        }
+    
     }
 
     
     public static func mapViewController() -> PickerMapViewController? {
-        return pickerStoryboard().instantiateViewController(identifier: "VC") as? PickerMapViewController
+        if #available(iOS 13.0, *) {
+            return pickerStoryboard().instantiateViewController(identifier: "VC") as? PickerMapViewController
+        } else {
+            return pickerStoryboard().instantiateViewController(withIdentifier: "VC") as? PickerMapViewController
+        }
     }
 }
